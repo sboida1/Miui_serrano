@@ -1141,6 +1141,20 @@
     throw v4
 .end method
 
+.method private getContextForResources(Landroid/content/Context;)Landroid/content/Context;
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+
+    .prologue
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, v0}, Landroid/widget/RemoteViews;->getContextForResources(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method private getContextForResources(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
     .locals 4
     .param p1, "context"    # Landroid/content/Context;
@@ -2148,7 +2162,7 @@
 
     .line 2760
     .local v4, "rvToApply":Landroid/widget/RemoteViews;
-    invoke-direct {p0, p1, p4}, Landroid/widget/RemoteViews;->getContextForResources(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Context;
+    invoke-direct {p0, p1}, Landroid/widget/RemoteViews;->getContextForResources(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object v0
 
