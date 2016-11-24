@@ -20,4 +20,4 @@ debug.atrace.tags.enableflags=0
 ro.bootimage.build.date=Sat Aug 20 00:37:26 PDT 2016
 ro.bootimage.build.date.utc=1471678646
 ro.bootimage.build.fingerprint=samsung/cm_serranoltexx/serranoltexx:6.0.1/MOB30Z/17112a64e5:userdebug/test-keys
-persist.sys.usb.config=adb
+persist.sys.usb.config=adb,mtp
