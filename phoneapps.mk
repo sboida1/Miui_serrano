@@ -20,6 +20,7 @@ private-phone-apps := \
 	webview
 
 private-phone-priv-apps := \
+	AudioFX \
 	BackupRestoreConfirmation \
 	CellBroadcastReceiver \
 	CMAudioService \

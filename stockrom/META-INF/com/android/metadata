@@ -1,0 +1,3 @@
+post-build=samsung/serranolte/serranolte:6.0.1/KOT49H/I9195XXUCOI4:user/test-keys
+post-timestamp=1471678316
+pre-device=serranolte
