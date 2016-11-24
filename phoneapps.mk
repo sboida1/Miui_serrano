@@ -7,6 +7,7 @@ private-phone-apps := \
 	CertInstaller \
 	FM2 \
 	KeyChain \
+	LatinIME \
 	LiveWallpapers \
 	NfcNci \
 	PacProcessor \
