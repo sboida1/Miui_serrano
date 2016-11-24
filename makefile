@@ -21,7 +21,7 @@ local-modified-jars := org.cyanogenmod.platform
 # All apks from MIUI
 #local-miui-removed-apps := AMAPNetworkLocation FM GameCenter MiGameCenterSDKService Mipay MiuiSuperMarket MiuiVideo QuickSearchBox SogouInput SystemAdSolution WebViewGoogle XiaomiVip XMPass
 
-#local-miui-modified-apps := TeleService
+local-miui-modified-apps := TeleService
 
 # Config density for co-developers to use the aaps with HDPI or XHDPI resource,
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch

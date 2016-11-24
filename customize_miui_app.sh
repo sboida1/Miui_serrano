@@ -37,3 +37,7 @@ function mergyXmlPart() {
 		$XMLMERGYTOOL $src $dst
 	done
 }
+
+if [ $1 = "TeleService" ];then
+    applyPatch $1 $2
+fi
