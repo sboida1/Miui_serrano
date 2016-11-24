@@ -1,0 +1,23 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+#
+ro.secure=0
+ro.adb.secure=0
+ro.debuggable=1
+persist.service.adb.enable=1
+security.perf_harden=1
+ro.allow.mock.location=0
+ro.zygote=zygote32
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+ro.dalvik.vm.native.bridge=0
+debug.atrace.tags.enableflags=0
+#
+# BOOTIMAGE_BUILD_PROPERTIES
+#
+ro.bootimage.build.date=Sat Aug 20 00:37:26 PDT 2016
+ro.bootimage.build.date.utc=1471678646
+ro.bootimage.build.fingerprint=samsung/cm_serranoltexx/serranoltexx:6.0.1/MOB30Z/17112a64e5:userdebug/test-keys
+persist.sys.usb.config=adb
