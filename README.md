@@ -1,6 +1,6 @@
 #Project MIUI 8 Patchrom for Galaxy S4 Mini
 
-#Get Android SDK
+# 1.Get Android SDK
 
 In order to build patchrom project, you must have android sdk installed.(http://developer.android.com/sdk/installing.html)
 
@@ -10,7 +10,7 @@ $ vim .bashrc
 
 $ export PATH=$PATH:/home/xxx/android-sdk/tools:/home/xxx/anroid-sdk/platform-tools
 
-#Getting Started
+# 2.Getting Started
 
 To get started with MiCode/patchrom, you'll need to get familiar with Git and Repo.
 
@@ -28,7 +28,7 @@ $ repo sync
 
 $ git clone https://github.com/sboida1/Miui_serrano serrano
 
-#Build
+# 3.Build
 
 $ . build/envsetup.sh && cd serrano
 
@@ -42,6 +42,6 @@ Now you can get your own miui ROM, enjoy it!
 
 @Micode Miui Rom
 @DiorgenesS (without him, there wouldnt be more fixes)!
-@Prince.K.Paul (Miui-Porting Moderator)
-@aabyebaby 
+@Prince.K.Paul (Miui-Porting Moderator -helped with rejects)
+@aabyebaby (for Pointing me in the right direction)
 @umuturunc for his love for Miui and motivation ;-)
