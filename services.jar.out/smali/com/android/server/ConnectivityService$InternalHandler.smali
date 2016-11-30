@@ -25,13 +25,13 @@
     .param p2, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 2528
+    .line 2534
     iput-object p1, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
-    .line 2529
+    .line 2535
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 2528
+    .line 2534
     return-void
 .end method
 
@@ -46,27 +46,27 @@
 
     const/4 v9, 0x0
 
-    .line 2534
+    .line 2540
     iget v6, p1, Landroid/os/Message;->what:I
 
     sparse-switch v6, :sswitch_data_0
 
-    .line 2533
+    .line 2539
     :cond_0
     :goto_0
     return-void
 
-    .line 2537
+    .line 2543
     :sswitch_0
     const/4 v0, 0x0
 
-    .line 2538
+    .line 2544
     .local v0, "causedBy":Ljava/lang/String;
     iget-object v7, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     monitor-enter v7
 
-    .line 2539
+    .line 2545
     :try_start_0
     iget v6, p1, Landroid/os/Message;->arg1:I
 
@@ -78,7 +78,7 @@
 
     if-ne v6, v8, :cond_1
 
-    .line 2540
+    .line 2546
     iget-object v6, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-static {v6}, Lcom/android/server/ConnectivityService;->-get3(Lcom/android/server/ConnectivityService;)Landroid/os/PowerManager$WakeLock;
@@ -89,10 +89,10 @@
 
     move-result v6
 
-    .line 2539
+    .line 2545
     if-eqz v6, :cond_1
 
-    .line 2541
+    .line 2547
     iget-object v6, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-static {v6}, Lcom/android/server/ConnectivityService;->-get3(Lcom/android/server/ConnectivityService;)Landroid/os/PowerManager$WakeLock;
@@ -101,7 +101,7 @@
 
     invoke-virtual {v6}, Landroid/os/PowerManager$WakeLock;->release()V
 
-    .line 2542
+    .line 2548
     iget-object v6, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-static {v6}, Lcom/android/server/ConnectivityService;->-get4(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
@@ -113,14 +113,14 @@
     .local v0, "causedBy":Ljava/lang/String;
     monitor-exit v7
 
-    .line 2547
+    .line 2553
     iget v6, p1, Landroid/os/Message;->what:I
 
     const/16 v7, 0x18
 
     if-ne v6, v7, :cond_2
 
-    .line 2548
+    .line 2554
     const-string/jumbo v6, "Failed to find a new network - expiring NetTransition Wakelock"
 
     invoke-static {v6}, Lcom/android/server/ConnectivityService;->-wrap18(Ljava/lang/String;)V
@@ -133,7 +133,7 @@
 
     goto :goto_0
 
-    .line 2538
+    .line 2544
     :catchall_0
     move-exception v6
 
@@ -141,7 +141,7 @@
 
     throw v6
 
-    .line 2550
+    .line 2556
     .local v0, "causedBy":Ljava/lang/String;
     :cond_2
     new-instance v6, Ljava/lang/StringBuilder;
@@ -164,10 +164,10 @@
 
     move-result-object v6
 
-    .line 2551
+    .line 2557
     const-string/jumbo v7, " cleared because we found a replacement network"
 
-    .line 2550
+    .line 2556
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v6
@@ -180,7 +180,7 @@
 
     goto :goto_0
 
-    .line 2556
+    .line 2562
     :sswitch_1
     iget-object v6, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -188,13 +188,13 @@
 
     goto :goto_0
 
-    .line 2560
+    .line 2566
     :sswitch_2
     iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v1, Landroid/content/Intent;
 
-    .line 2561
+    .line 2567
     .local v1, "intent":Landroid/content/Intent;
     iget-object v6, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -202,7 +202,7 @@
 
     goto :goto_0
 
-    .line 2565
+    .line 2571
     .end local v1    # "intent":Landroid/content/Intent;
     :sswitch_3
     iget-object v7, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
@@ -215,7 +215,7 @@
 
     goto :goto_0
 
-    .line 2569
+    .line 2575
     :sswitch_4
     iget-object v7, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -227,7 +227,7 @@
 
     goto/16 :goto_0
 
-    .line 2573
+    .line 2579
     :sswitch_5
     iget-object v7, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -239,7 +239,7 @@
 
     goto/16 :goto_0
 
-    .line 2577
+    .line 2583
     :sswitch_6
     iget-object v7, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -251,7 +251,7 @@
 
     goto/16 :goto_0
 
-    .line 2582
+    .line 2588
     :sswitch_7
     iget-object v7, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -263,7 +263,7 @@
 
     goto/16 :goto_0
 
-    .line 2587
+    .line 2593
     :sswitch_8
     iget-object v6, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -271,7 +271,7 @@
 
     goto/16 :goto_0
 
-    .line 2591
+    .line 2597
     :sswitch_9
     iget-object v7, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -285,7 +285,7 @@
 
     goto/16 :goto_0
 
-    .line 2595
+    .line 2601
     :sswitch_a
     iget-object v7, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -299,7 +299,7 @@
 
     goto/16 :goto_0
 
-    .line 2599
+    .line 2605
     :sswitch_b
     iget-object v10, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -333,7 +333,7 @@
 
     goto :goto_2
 
-    .line 2603
+    .line 2609
     :sswitch_c
     iget-object v7, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -345,7 +345,7 @@
 
     goto/16 :goto_0
 
-    .line 2607
+    .line 2613
     :sswitch_d
     iget-object v6, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -353,7 +353,7 @@
 
     goto/16 :goto_0
 
-    .line 2612
+    .line 2618
     :sswitch_e
     iget-object v6, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -365,7 +365,7 @@
 
     goto/16 :goto_0
 
-    .line 2617
+    .line 2623
     :sswitch_f
     iget-object v7, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -377,15 +377,15 @@
 
     move-result-object v2
 
-    .line 2618
+    .line 2624
     .local v2, "nai":Lcom/android/server/connectivity/NetworkAgentInfo;
     iget v5, p1, Landroid/os/Message;->arg1:I
 
-    .line 2619
+    .line 2625
     .local v5, "slot":I
     iget v4, p1, Landroid/os/Message;->arg2:I
 
-    .line 2620
+    .line 2626
     .local v4, "reason":I
     iget-object v6, p0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -397,7 +397,7 @@
 
     goto/16 :goto_0
 
-    .line 2624
+    .line 2630
     .end local v2    # "nai":Lcom/android/server/connectivity/NetworkAgentInfo;
     .end local v4    # "reason":I
     .end local v5    # "slot":I
@@ -430,7 +430,7 @@
 
     check-cast v2, Lcom/android/server/connectivity/NetworkAgentInfo;
 
-    .line 2625
+    .line 2631
     .restart local v2    # "nai":Lcom/android/server/connectivity/NetworkAgentInfo;
     iget-object v6, v2, Lcom/android/server/connectivity/NetworkAgentInfo;->networkMonitor:Lcom/android/server/connectivity/NetworkMonitor;
 
@@ -438,7 +438,7 @@
 
     goto :goto_3
 
-    .line 2534
+    .line 2540
     :sswitch_data_0
     .sparse-switch
         0x8 -> :sswitch_0

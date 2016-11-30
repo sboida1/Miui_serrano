@@ -919,7 +919,7 @@
     move-result-object v1
 
     .line 294
-    const v18, 0x1080428
+    const v18, 0x108042c
 
     .line 293
     move/from16 v0, v18
@@ -972,20 +972,22 @@
 
     .line 302
     .local v14, "countryIso":Ljava/lang/String;
-    const-string/jumbo v1, "user_network_mode"
+    #const-string/jumbo v1, "user_network_mode"
 
     .line 301
-    move-object/from16 v0, p1
+    #move-object/from16 v0, p1
 
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
+    #invoke-interface {v0, v1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
-    move-result v1
+    #move-result v1
 
-    move-object/from16 v0, p1
+    #move-object/from16 v0, p1
 
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
+    #invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v15
+    #move-result v15
+    
+    const/16 v15, -0x1
 
     .line 305
     .local v15, "userNwMode":I

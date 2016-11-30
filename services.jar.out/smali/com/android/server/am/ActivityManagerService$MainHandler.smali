@@ -1014,7 +1014,7 @@
     invoke-direct {v4, v0}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
     .line 1802
-    const v8, 0x108064f
+    const v8, 0x1080653
 
     .line 1801
     invoke-virtual {v4, v8}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
@@ -2472,7 +2472,7 @@
     invoke-direct {v4, v8}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
     .line 2046
-    const v8, 0x108064f
+    const v8, 0x1080653
 
     .line 2045
     invoke-virtual {v4, v8}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
@@ -3112,7 +3112,7 @@
 
     .line 2144
     .restart local v19    # "notification":Landroid/app/Notification;
-    const v4, 0x1080648
+    const v4, 0x108064c
 
     move-object/from16 v0, v19
 
@@ -3577,7 +3577,7 @@
     invoke-direct {v4, v0}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
     .line 2226
-    const v8, 0x1080649
+    const v8, 0x108064d
 
     .line 2225
     invoke-virtual {v4, v8}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;

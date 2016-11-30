@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/wm/WindowManagerService;
 
     .prologue
-    .line 947
+    .line 948
     iput-object p1, p0, Lcom/android/server/wm/WindowManagerService$5;->this$0:Lcom/android/server/wm/WindowManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,14 +42,14 @@
     .param p1, "enabled"    # Z
 
     .prologue
-    .line 950
+    .line 951
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$5;->this$0:Lcom/android/server/wm/WindowManagerService;
 
     iget-object v1, v0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
     monitor-enter v1
 
-    .line 951
+    .line 952
     :try_start_0
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$5;->this$0:Lcom/android/server/wm/WindowManagerService;
 
@@ -69,17 +69,17 @@
     :goto_0
     monitor-exit v1
 
-    .line 949
+    .line 950
     return-void
 
-    .line 952
+    .line 953
     :cond_1
     :try_start_1
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$5;->this$0:Lcom/android/server/wm/WindowManagerService;
 
     iput-boolean p1, v0, Lcom/android/server/wm/WindowManagerService;->mAnimationsDisabled:Z
 
-    .line 953
+    .line 954
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$5;->this$0:Lcom/android/server/wm/WindowManagerService;
 
     const/4 v2, 0x0
@@ -90,7 +90,7 @@
 
     goto :goto_0
 
-    .line 950
+    .line 951
     :catchall_0
     move-exception v0
 

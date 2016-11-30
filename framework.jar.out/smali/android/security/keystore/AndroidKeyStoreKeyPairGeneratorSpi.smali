@@ -3074,7 +3074,6 @@
     :try_end_3
     .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_1
     .catch Ljava/lang/NullPointerException; {:try_start_3 .. :try_end_3} :catch_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     move-result v6

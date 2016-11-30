@@ -1359,7 +1359,7 @@
 
     .line 992
     .restart local v10    # "body":Ljava/lang/CharSequence;
-    const v13, 0x1080644
+    const v13, 0x1080648
 
     .line 993
     .local v13, "icon":I

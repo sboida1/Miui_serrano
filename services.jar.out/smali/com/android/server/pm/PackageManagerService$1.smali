@@ -224,12 +224,12 @@
     .local v0, "volumeUuid":Ljava/lang/String;
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService$1;->this$0:Lcom/android/server/pm/PackageManagerService;
 
-    invoke-static {v1, v0}, Lcom/android/server/pm/PackageManagerService;->-wrap36(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/server/pm/PackageManagerService;->-wrap37(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)V
 
     .line 1750
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService$1;->this$0:Lcom/android/server/pm/PackageManagerService;
 
-    invoke-static {v1, v0}, Lcom/android/server/pm/PackageManagerService;->-wrap35(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/server/pm/PackageManagerService;->-wrap36(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)V
 
     .line 1754
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService$1;->this$0:Lcom/android/server/pm/PackageManagerService;
@@ -241,7 +241,7 @@
     .line 1756
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService$1;->this$0:Lcom/android/server/pm/PackageManagerService;
 
-    invoke-static {v1, p1}, Lcom/android/server/pm/PackageManagerService;->-wrap31(Lcom/android/server/pm/PackageManagerService;Landroid/os/storage/VolumeInfo;)V
+    invoke-static {v1, p1}, Lcom/android/server/pm/PackageManagerService;->-wrap32(Lcom/android/server/pm/PackageManagerService;Landroid/os/storage/VolumeInfo;)V
 
     .line 1763
     .end local v0    # "volumeUuid":Ljava/lang/String;
@@ -281,7 +281,7 @@
     .line 1759
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService$1;->this$0:Lcom/android/server/pm/PackageManagerService;
 
-    invoke-static {v1, p1}, Lcom/android/server/pm/PackageManagerService;->-wrap43(Lcom/android/server/pm/PackageManagerService;Landroid/os/storage/VolumeInfo;)V
+    invoke-static {v1, p1}, Lcom/android/server/pm/PackageManagerService;->-wrap44(Lcom/android/server/pm/PackageManagerService;Landroid/os/storage/VolumeInfo;)V
 
     goto :goto_0
 

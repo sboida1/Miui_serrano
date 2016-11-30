@@ -183,6 +183,20 @@
     return v0
 .end method
 
+.method public isKeyguardPanelFocused()Z
+    .locals 1
+
+    .prologue
+    .line 258
+    iget-object v0, p0, Lcom/android/server/policy/keyguard/KeyguardServiceWrapper;->mKeyguardStateMonitor:Lcom/android/server/policy/keyguard/KeyguardStateMonitor;
+
+    invoke-virtual {v0}, Lcom/android/server/policy/keyguard/KeyguardStateMonitor;->isKeyguardPanelFocused()Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public isSecure()Z
     .locals 1
 

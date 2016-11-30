@@ -38,7 +38,7 @@
 
 .field static final TRANSACTION_getAllMessagesFromIccEfForSubscriber:I = 0x1
 
-.field static final TRANSACTION_getImsSmsFormatForSubscriber_22:I = 0x17
+.field static final TRANSACTION_getImsSmsFormatForSubscriber:I = 0x17
 
 .field static final TRANSACTION_getPreferredSmsSubscription:I = 0x16
 
@@ -50,7 +50,7 @@
 
 .field static final TRANSACTION_injectSmsPduForSubscriber:I = 0x9
 
-.field static final TRANSACTION_isImsSmsSupportedForSubscriber_19:I = 0x14
+.field static final TRANSACTION_isImsSmsSupportedForSubscriber:I = 0x14
 
 .field static final TRANSACTION_isSMSPromptEnabled:I = 0x18
 

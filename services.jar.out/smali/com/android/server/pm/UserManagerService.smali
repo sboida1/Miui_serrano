@@ -8010,7 +8010,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/server/pm/UserManagerService;->checkManageUsersPermission(Ljava/lang/String;)V
+    invoke-static {v2}, Lcom/android/server/pm/UserManagerService;->checkManageOrCreateUsersPermission(Ljava/lang/String;)V
 
     .line 306
     :cond_0

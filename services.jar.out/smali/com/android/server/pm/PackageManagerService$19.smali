@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/pm/PackageManagerService;
 
     .prologue
-    .line 15808
+    .line 15838
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$19;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -49,17 +49,17 @@
 
     const/4 v2, -0x1
 
-    .line 15811
+    .line 15841
     invoke-static {p1}, Landroid/os/Process;->isIsolated(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 15812
+    .line 15842
     return v1
 
-    .line 15814
+    .line 15844
     :cond_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$19;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -71,10 +71,10 @@
 
     if-nez v0, :cond_1
 
-    .line 15815
+    .line 15845
     return v3
 
-    .line 15817
+    .line 15847
     :cond_1
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$19;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -86,10 +86,10 @@
 
     if-ne v0, v2, :cond_2
 
-    .line 15818
+    .line 15848
     return v3
 
-    .line 15820
+    .line 15850
     :cond_2
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$19;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -101,12 +101,12 @@
 
     if-ne v0, v2, :cond_3
 
-    .line 15821
+    .line 15851
     const/4 v0, 0x2
 
     return v0
 
-    .line 15823
+    .line 15853
     :cond_3
     const/4 v0, 0x3
 
@@ -119,7 +119,7 @@
     .param p2, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 15828
+    .line 15858
     const/4 v0, 0x1
 
     return v0

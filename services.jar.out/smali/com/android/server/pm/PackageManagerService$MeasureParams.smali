@@ -228,7 +228,7 @@
     move-result-object v5
 
     .line 11363
-    invoke-static {v4, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap21(Lcom/android/internal/app/IMediaContainerService;[Ljava/io/File;)J
+    invoke-static {v4, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap22(Lcom/android/internal/app/IMediaContainerService;[Ljava/io/File;)J
 
     move-result-wide v4
 
@@ -253,7 +253,7 @@
     move-result-object v5
 
     .line 11366
-    invoke-static {v4, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap21(Lcom/android/internal/app/IMediaContainerService;[Ljava/io/File;)J
+    invoke-static {v4, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap22(Lcom/android/internal/app/IMediaContainerService;[Ljava/io/File;)J
 
     move-result-wide v4
 
@@ -291,7 +291,7 @@
     move-result-object v5
 
     .line 11372
-    invoke-static {v4, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap21(Lcom/android/internal/app/IMediaContainerService;[Ljava/io/File;)J
+    invoke-static {v4, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap22(Lcom/android/internal/app/IMediaContainerService;[Ljava/io/File;)J
 
     move-result-wide v4
 
@@ -316,7 +316,7 @@
     move-result-object v5
 
     .line 11375
-    invoke-static {v4, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap21(Lcom/android/internal/app/IMediaContainerService;[Ljava/io/File;)J
+    invoke-static {v4, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap22(Lcom/android/internal/app/IMediaContainerService;[Ljava/io/File;)J
 
     move-result-wide v4
 

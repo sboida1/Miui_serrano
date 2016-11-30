@@ -39,7 +39,7 @@
     .param p5, "val$observer"    # Landroid/content/pm/IPackageDeleteObserver2;
 
     .prologue
-    .line 13786
+    .line 13816
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$11;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iput-object p2, p0, Lcom/android/server/pm/PackageManagerService$11;->val$packageName:Ljava/lang/String;
@@ -61,14 +61,14 @@
     .locals 6
 
     .prologue
-    .line 13788
+    .line 13818
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService$11;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v2, v2, Lcom/android/server/pm/PackageManagerService;->mHandler:Lcom/android/server/pm/PackageManagerService$PackageHandler;
 
     invoke-virtual {v2, p0}, Lcom/android/server/pm/PackageManagerService$PackageHandler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 13789
+    .line 13819
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService$11;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v3, p0, Lcom/android/server/pm/PackageManagerService$11;->val$packageName:Ljava/lang/String;
@@ -77,17 +77,17 @@
 
     iget v5, p0, Lcom/android/server/pm/PackageManagerService$11;->val$flags:I
 
-    invoke-static {v2, v3, v4, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap13(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;II)I
+    invoke-static {v2, v3, v4, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap14(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;II)I
 
     move-result v1
 
-    .line 13790
+    .line 13820
     .local v1, "returnCode":I
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService$11;->val$observer:Landroid/content/pm/IPackageDeleteObserver2;
 
     if-eqz v2, :cond_0
 
-    .line 13792
+    .line 13822
     :try_start_0
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService$11;->val$observer:Landroid/content/pm/IPackageDeleteObserver2;
 
@@ -99,16 +99,16 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 13787
+    .line 13817
     :cond_0
     :goto_0
     return-void
 
-    .line 13793
+    .line 13823
     :catch_0
     move-exception v0
 
-    .line 13794
+    .line 13824
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v2, "PackageManager"
 

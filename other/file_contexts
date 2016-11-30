@@ -852,3 +852,4 @@
 
 # bash
 /system/xbin/bash                               u:object_r:shell_exec:s0
+

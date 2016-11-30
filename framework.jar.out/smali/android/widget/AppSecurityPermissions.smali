@@ -1243,7 +1243,7 @@
     .line 319
     .end local v5    # "icon":Landroid/graphics/drawable/Drawable;
     :cond_0
-    const v0, 0x1080435
+    const v0, 0x1080439
 
     goto :goto_0
 .end method

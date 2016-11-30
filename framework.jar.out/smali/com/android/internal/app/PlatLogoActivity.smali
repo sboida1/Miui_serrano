@@ -169,7 +169,7 @@
     invoke-virtual {v4, v9}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 96
-    const v9, 0x1080544
+    const v9, 0x1080548
 
     invoke-virtual {p0, v9}, Lcom/android/internal/app/PlatLogoActivity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -338,7 +338,7 @@
     if-eqz v2, :cond_0
 
     .line 211
-    const v2, 0x1080543
+    const v2, 0x1080547
 
     .line 210
     :goto_0
@@ -404,7 +404,7 @@
     .end local v0    # "fadeIn":Landroid/animation/Animator;
     .end local v1    # "fg":Landroid/graphics/drawable/Drawable;
     :cond_0
-    const v2, 0x1080542
+    const v2, 0x1080546
 
     goto :goto_0
 .end method

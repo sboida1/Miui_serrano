@@ -2212,15 +2212,15 @@
 
     .line 382
     :cond_3
-    const/16 v16, 0x1
-
-    move/from16 v0, p2
-
-    move/from16 v1, v16
-
-    if-ne v0, v1, :cond_5
+    if-eqz v10, :cond_5
 
     .line 383
+    iget-object v0, v10, Landroid/content/pm/ApplicationInfo;->volumeUuid:Ljava/lang/String;
+
+    move-object/from16 v16, v0
+
+    if-nez v16, :cond_4
+
     if-eqz v11, :cond_4
 
     .line 384
@@ -2230,34 +2230,6 @@
 
     .line 386
     :cond_4
-    new-instance v16, Ljava/io/IOException;
-
-    const-string/jumbo v17, "Requested internal only, but not enough space"
-
-    invoke-direct/range {v16 .. v17}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    throw v16
-
-    .line 391
-    :cond_5
-    if-eqz v10, :cond_7
-
-    .line 392
-    iget-object v0, v10, Landroid/content/pm/ApplicationInfo;->volumeUuid:Ljava/lang/String;
-
-    move-object/from16 v16, v0
-
-    if-nez v16, :cond_6
-
-    if-eqz v11, :cond_6
-
-    .line 393
-    const/16 v16, 0x0
-
-    return-object v16
-
-    .line 395
-    :cond_6
     iget-object v0, v10, Landroid/content/pm/ApplicationInfo;->volumeUuid:Ljava/lang/String;
 
     move-object/from16 v16, v0
@@ -2268,14 +2240,42 @@
 
     move-result v16
 
-    if-eqz v16, :cond_7
+    if-eqz v16, :cond_5
 
-    .line 396
+    .line 387
     iget-object v0, v10, Landroid/content/pm/ApplicationInfo;->volumeUuid:Ljava/lang/String;
 
     move-object/from16 v16, v0
 
     return-object v16
+
+    .line 392
+    :cond_5
+    const/16 v16, 0x1
+
+    move/from16 v0, p2
+
+    move/from16 v1, v16
+
+    if-ne v0, v1, :cond_7
+
+    .line 393
+    if-eqz v11, :cond_6
+
+    .line 394
+    const/16 v16, 0x0
+
+    return-object v16
+
+    .line 396
+    :cond_6
+    new-instance v16, Ljava/io/IOException;
+
+    const-string/jumbo v17, "Requested internal only, but not enough space"
+
+    invoke-direct/range {v16 .. v17}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v16
 
     .line 402
     :cond_7

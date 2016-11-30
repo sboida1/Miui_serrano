@@ -28,6 +28,8 @@
 
 .field static final TRANSACTION_onInputRestrictedStateChanged:I = 0x3
 
+.field static final TRANSACTION_onKeyguardPanelFocusChanged:I = 0x4
+
 .field static final TRANSACTION_onShowingStateChanged_0:I = 0x1
 
 .field static final TRANSACTION_onSimSecureStateChanged:I = 0x2
@@ -123,7 +125,7 @@
     .line 38
     sparse-switch p1, :sswitch_data_0
 
-    .line 73
+    .line 82
     invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
     move-result v1
@@ -243,12 +245,48 @@
     .restart local v0    # "_arg0":Z
     goto :goto_2
 
+    .line 74
+    .end local v0    # "_arg0":Z
+    :sswitch_4
+    const-string/jumbo v1, "com.android.internal.policy.IKeyguardStateCallback"
+
+    invoke-virtual {p2, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 76
+    invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    const/4 v0, 0x1
+
+    .line 77
+    .restart local v0    # "_arg0":Z
+    :goto_3
+    invoke-virtual {p0, v0}, Lcom/android/internal/policy/IKeyguardStateCallback$Stub;->onKeyguardPanelFocusChanged(Z)V
+
+    .line 78
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 79
+    return v2
+
+    .line 76
+    .end local v0    # "_arg0":Z
+    :cond_3
+    const/4 v0, 0x0
+
+    .restart local v0    # "_arg0":Z
+    goto :goto_3
+
     .line 38
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_1
         0x2 -> :sswitch_2
         0x3 -> :sswitch_3
+        0x4 -> :sswitch_4
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method

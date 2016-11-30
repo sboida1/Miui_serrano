@@ -60,7 +60,7 @@
 
     const-string/jumbo v3, "permission grant or revoke changed gids"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap29(Lcom/android/server/pm/PackageManagerService;IILjava/lang/String;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap30(Lcom/android/server/pm/PackageManagerService;IILjava/lang/String;)V
 
     .line 3716
     return-void

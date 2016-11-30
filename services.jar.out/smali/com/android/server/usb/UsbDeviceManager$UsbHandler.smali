@@ -690,7 +690,7 @@
     if-eqz v0, :cond_8
 
     .line 1005
-    #invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->publishAdbCustomTile()V
+  #  invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->publishAdbCustomTile()V
 
     .line 994
     :goto_5
@@ -761,7 +761,7 @@
     .line 1007
     .end local v0    # "enabled":Z
     :cond_8
-    #invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->unpublishAdbCustomTile()V
+   # invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->unpublishAdbCustomTile()V
 
     goto :goto_5
 .end method
@@ -1562,7 +1562,7 @@
     invoke-direct {v0, v1}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
     .line 874
-    const v1, 0x108064f
+    const v1, 0x1080653
 
     .line 873
     invoke-virtual {v0, v1}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
@@ -1680,7 +1680,7 @@
     if-lez v7, :cond_d
 
     .line 895
-    #invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->publishAdbCustomTile()V
+  #  invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->publishAdbCustomTile()V
 
     .line 835
     :goto_4
@@ -1771,7 +1771,7 @@
 
     .line 897
     :cond_d
-    #invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->unpublishAdbCustomTile()V
+  #  invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->unpublishAdbCustomTile()V
 
     goto :goto_4
 .end method
@@ -2557,7 +2557,7 @@
     invoke-direct {v0, v3}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
     .line 815
-    const v3, 0x108064f
+    const v3, 0x1080653
 
     .line 814
     invoke-virtual {v0, v3}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;

@@ -33,7 +33,7 @@
     .param p3, "val$reportStatus"    # Z
 
     .prologue
-    .line 16519
+    .line 16549
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$20;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iput-boolean p2, p0, Lcom/android/server/pm/PackageManagerService$20;->val$mediaStatus:Z
@@ -51,7 +51,7 @@
     .locals 4
 
     .prologue
-    .line 16521
+    .line 16551
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$20;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-boolean v1, p0, Lcom/android/server/pm/PackageManagerService$20;->val$mediaStatus:Z
@@ -60,8 +60,8 @@
 
     const/4 v3, 0x1
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap44(Lcom/android/server/pm/PackageManagerService;ZZZ)V
+    invoke-static {v0, v1, v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap45(Lcom/android/server/pm/PackageManagerService;ZZZ)V
 
-    .line 16520
+    .line 16550
     return-void
 .end method

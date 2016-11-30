@@ -1861,7 +1861,7 @@
     .line 625
     new-instance v0, Lcom/android/server/policy/GlobalActions$15;
 
-    const v1, 0x1080439
+    const v1, 0x108043d
 
     .line 626
     const v2, 0x104019d

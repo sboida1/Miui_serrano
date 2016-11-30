@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/pm/PackageManagerService;
 
     .prologue
-    .line 17958
+    .line 17988
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     invoke-direct {p0}, Landroid/content/pm/PackageManagerInternal;-><init>()V
@@ -50,14 +50,14 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 18018
+    .line 18048
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
-    .line 18019
+    .line 18049
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -69,10 +69,10 @@
 
     monitor-exit v1
 
-    .line 18017
+    .line 18047
     return-void
 
-    .line 18018
+    .line 18048
     :catchall_0
     move-exception v0
 
@@ -87,14 +87,14 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 18025
+    .line 18055
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
-    .line 18026
+    .line 18056
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -106,10 +106,10 @@
 
     monitor-exit v1
 
-    .line 18024
+    .line 18054
     return-void
 
-    .line 18025
+    .line 18055
     :catchall_0
     move-exception v0
 
@@ -124,14 +124,14 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 18010
+    .line 18040
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
-    .line 18011
+    .line 18041
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -143,10 +143,10 @@
 
     monitor-exit v1
 
-    .line 18009
+    .line 18039
     return-void
 
-    .line 18010
+    .line 18040
     :catchall_0
     move-exception v0
 
@@ -160,14 +160,14 @@
     .param p1, "provider"    # Landroid/content/pm/PackageManagerInternal$PackagesProvider;
 
     .prologue
-    .line 17989
+    .line 18019
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
-    .line 17990
+    .line 18020
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -179,10 +179,10 @@
 
     monitor-exit v1
 
-    .line 17988
+    .line 18018
     return-void
 
-    .line 17989
+    .line 18019
     :catchall_0
     move-exception v0
 
@@ -196,14 +196,14 @@
     .param p1, "provider"    # Landroid/content/pm/PackageManagerInternal$PackagesProvider;
 
     .prologue
-    .line 17968
+    .line 17998
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
-    .line 17969
+    .line 17999
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -215,10 +215,10 @@
 
     monitor-exit v1
 
-    .line 17967
+    .line 17997
     return-void
 
-    .line 17968
+    .line 17998
     :catchall_0
     move-exception v0
 
@@ -232,14 +232,14 @@
     .param p1, "provider"    # Landroid/content/pm/PackageManagerInternal$PackagesProvider;
 
     .prologue
-    .line 17961
+    .line 17991
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
-    .line 17962
+    .line 17992
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -251,10 +251,10 @@
 
     monitor-exit v1
 
-    .line 17960
+    .line 17990
     return-void
 
-    .line 17961
+    .line 17991
     :catchall_0
     move-exception v0
 
@@ -268,14 +268,14 @@
     .param p1, "provider"    # Landroid/content/pm/PackageManagerInternal$PackagesProvider;
 
     .prologue
-    .line 17996
+    .line 18026
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
-    .line 17997
+    .line 18027
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -287,10 +287,10 @@
 
     monitor-exit v1
 
-    .line 17995
+    .line 18025
     return-void
 
-    .line 17996
+    .line 18026
     :catchall_0
     move-exception v0
 
@@ -304,14 +304,14 @@
     .param p1, "provider"    # Landroid/content/pm/PackageManagerInternal$PackagesProvider;
 
     .prologue
-    .line 17982
+    .line 18012
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
-    .line 17983
+    .line 18013
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -323,10 +323,10 @@
 
     monitor-exit v1
 
-    .line 17981
+    .line 18011
     return-void
 
-    .line 17982
+    .line 18012
     :catchall_0
     move-exception v0
 
@@ -340,14 +340,14 @@
     .param p1, "provider"    # Landroid/content/pm/PackageManagerInternal$SyncAdapterPackagesProvider;
 
     .prologue
-    .line 18003
+    .line 18033
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
-    .line 18004
+    .line 18034
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -359,10 +359,10 @@
 
     monitor-exit v1
 
-    .line 18002
+    .line 18032
     return-void
 
-    .line 18003
+    .line 18033
     :catchall_0
     move-exception v0
 
@@ -376,14 +376,14 @@
     .param p1, "provider"    # Landroid/content/pm/PackageManagerInternal$PackagesProvider;
 
     .prologue
-    .line 17975
+    .line 18005
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
-    .line 17976
+    .line 18006
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PackageManagerInternalImpl;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -395,10 +395,10 @@
 
     monitor-exit v1
 
-    .line 17974
+    .line 18004
     return-void
 
-    .line 17975
+    .line 18005
     :catchall_0
     move-exception v0
 

@@ -110,7 +110,9 @@
     move-object v0, v1
 
     .line 473
-    check-cast v0, Ljava/lang/String;
+    nop
+
+    nop
 
     invoke-static {v0, v4}, Landroid/graphics/Typeface;->create(Ljava/lang/String;I)Landroid/graphics/Typeface;
 
@@ -121,7 +123,9 @@
     move-object v0, v1
 
     .line 474
-    check-cast v0, Ljava/lang/String;
+    nop
+
+    nop
 
     invoke-static {v0, v6}, Landroid/graphics/Typeface;->create(Ljava/lang/String;I)Landroid/graphics/Typeface;
 
@@ -229,7 +233,9 @@
     move-object v0, v1
 
     .line 488
-    check-cast v0, Ljava/lang/String;
+    nop
+
+    nop
 
     invoke-static {v0, v7}, Landroid/graphics/Typeface;->create(Ljava/lang/String;I)Landroid/graphics/Typeface;
 
@@ -238,7 +244,9 @@
     aput-object v0, v2, v7
 
     .line 489
-    check-cast v1, Ljava/lang/String;
+    nop
+
+    nop
 
     invoke-static {v1, v5}, Landroid/graphics/Typeface;->create(Ljava/lang/String;I)Landroid/graphics/Typeface;
 

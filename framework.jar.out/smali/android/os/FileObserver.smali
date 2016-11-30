@@ -66,7 +66,7 @@
     .line 139
     sget-object v0, Landroid/os/FileObserver;->s_observerThread:Landroid/os/FileObserver$ObserverThread;
 
-    invoke-virtual {v0}, Landroid/os/FileObserver$ObserverThread;->start()V
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     .line 42
     return-void

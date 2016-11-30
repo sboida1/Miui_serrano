@@ -520,6 +520,8 @@ system/etc/bash/bashrc 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x
 system/etc/bluetooth 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/bluetooth/auto_pair_devlist.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/bluetooth/bt_did.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/device_features 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/device_features/serranolte.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/bluetooth/bt_stack.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/dhcpcd 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/dhcpcd/dhcpcd-run-hooks 1014 2000 550 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -1804,8 +1806,6 @@ system/priv-app/Shell 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/Shell/Shell.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/StatementService 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/StatementService/StatementService.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/priv-app/StockSettings 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/priv-app/StockSettings/StockSettings.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/SystemUI 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/SystemUI/SystemUI.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/Tag 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0

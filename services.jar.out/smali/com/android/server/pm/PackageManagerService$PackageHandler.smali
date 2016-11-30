@@ -938,7 +938,7 @@
 
     const/4 v8, 0x1
 
-    invoke-static {v2, v3, v8, v5, v7}, Lcom/android/server/pm/PackageManagerService;->-wrap38(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;ZLjava/util/ArrayList;I)V
+    invoke-static {v2, v3, v8, v5, v7}, Lcom/android/server/pm/PackageManagerService;->-wrap39(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;ZLjava/util/ArrayList;I)V
 
     .line 1381
     add-int/lit8 v28, v28, 0x1
@@ -1268,7 +1268,7 @@
     iget-object v7, v0, Lcom/android/server/pm/PackageManagerService$InstallArgs;->installGrantPermissions:[Ljava/lang/String;
 
     .line 1427
-    invoke-static {v2, v3, v5, v7}, Lcom/android/server/pm/PackageManagerService;->-wrap26(Lcom/android/server/pm/PackageManagerService;Landroid/content/pm/PackageParser$Package;I[Ljava/lang/String;)V
+    invoke-static {v2, v3, v5, v7}, Lcom/android/server/pm/PackageManagerService;->-wrap27(Lcom/android/server/pm/PackageManagerService;Landroid/content/pm/PackageParser$Package;I[Ljava/lang/String;)V
 
     .line 1435
     :cond_16
@@ -1442,7 +1442,7 @@
 
     iget-object v2, v0, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->pkg:Landroid/content/pm/PackageParser$Package;
 
-    invoke-static {v2}, Lcom/android/server/pm/PackageManagerService;->-wrap7(Landroid/content/pm/PackageParser$Package;)Z
+    invoke-static {v2}, Lcom/android/server/pm/PackageManagerService;->-wrap8(Landroid/content/pm/PackageParser$Package;)Z
 
     move-result v2
 
@@ -1491,7 +1491,7 @@
     const/4 v15, 0x0
 
     .line 1492
-    invoke-static/range {v10 .. v15}, Lcom/android/server/pm/PackageManagerService;->-wrap39(Lcom/android/server/pm/PackageManagerService;ZZLjava/util/ArrayList;[ILandroid/content/IIntentReceiver;)V
+    invoke-static/range {v10 .. v15}, Lcom/android/server/pm/PackageManagerService;->-wrap40(Lcom/android/server/pm/PackageManagerService;ZZLjava/util/ArrayList;[ILandroid/content/IIntentReceiver;)V
 
     .line 1497
     .end local v13    # "pkgList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
@@ -1525,7 +1525,7 @@
 
     iget-object v3, v3, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
 
-    invoke-static {v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap34(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap35(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)V
 
     .line 1511
     :cond_1e
@@ -1555,7 +1555,7 @@
 
     aget v3, v9, v3
 
-    invoke-static {v2, v4, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap10(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;I)Z
+    invoke-static {v2, v4, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap11(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;I)Z
 
     move-result v2
 
@@ -1841,7 +1841,7 @@
 
     iget-object v3, v0, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
 
-    invoke-static {v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap34(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap35(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)V
 
     goto :goto_e
 
@@ -1859,7 +1859,7 @@
 
     iget-object v2, v0, Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;->pkg:Landroid/content/pm/PackageParser$Package;
 
-    invoke-static {v2}, Lcom/android/server/pm/PackageManagerService;->-wrap8(Landroid/content/pm/PackageParser$Package;)Z
+    invoke-static {v2}, Lcom/android/server/pm/PackageManagerService;->-wrap9(Landroid/content/pm/PackageParser$Package;)Z
 
     move-result v2
 
@@ -1872,7 +1872,7 @@
 
     iget-object v2, v0, Lcom/android/server/pm/PackageManagerService$PackageHandler;->this$0:Lcom/android/server/pm/PackageManagerService;
 
-    invoke-static {v2}, Lcom/android/server/pm/PackageManagerService;->-wrap15(Lcom/android/server/pm/PackageManagerService;)I
+    invoke-static {v2}, Lcom/android/server/pm/PackageManagerService;->-wrap16(Lcom/android/server/pm/PackageManagerService;)I
 
     move-result v2
 
@@ -2065,7 +2065,7 @@
     const/4 v7, 0x1
 
     .line 1535
-    #invoke-virtual {v2, v3, v5, v7}, Landroid/app/AppOpsManager;->setPrivacyGuardSettingForPackage(ILjava/lang/String;Z)V
+   # invoke-virtual {v2, v3, v5, v7}, Landroid/app/AppOpsManager;->setPrivacyGuardSettingForPackage(ILjava/lang/String;Z)V
 
     goto/16 :goto_f
 
@@ -2187,7 +2187,7 @@
 
     move-object/from16 v0, v20
 
-    invoke-static {v2, v0}, Lcom/android/server/pm/PackageManagerService;->-wrap41(Lcom/android/server/pm/PackageManagerService;Ljava/util/Set;)V
+    invoke-static {v2, v0}, Lcom/android/server/pm/PackageManagerService;->-wrap42(Lcom/android/server/pm/PackageManagerService;Ljava/util/Set;)V
 
     .line 1581
     .end local v20    # "args":Ljava/util/Set;, "Ljava/util/Set<Lcom/android/server/pm/PackageManagerService$AsecInstallArgs;>;"
@@ -2511,7 +2511,7 @@
 
     iget-object v2, v0, Lcom/android/server/pm/PackageManagerService$PackageHandler;->this$0:Lcom/android/server/pm/PackageManagerService;
 
-    invoke-static {v2}, Lcom/android/server/pm/PackageManagerService;->-wrap14(Lcom/android/server/pm/PackageManagerService;)I
+    invoke-static {v2}, Lcom/android/server/pm/PackageManagerService;->-wrap15(Lcom/android/server/pm/PackageManagerService;)I
 
     move-result v2
 
@@ -2579,7 +2579,7 @@
 
     move-object/from16 v1, v36
 
-    invoke-static {v2, v0, v1, v5, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap23(Lcom/android/server/pm/PackageManagerService;ILandroid/net/Uri;ILandroid/os/UserHandle;)V
+    invoke-static {v2, v0, v1, v5, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap24(Lcom/android/server/pm/PackageManagerService;ILandroid/net/Uri;ILandroid/os/UserHandle;)V
 
     .line 1632
     :try_start_b
@@ -2611,7 +2611,7 @@
 
     move/from16 v1, v48
 
-    invoke-static {v2, v0, v1}, Lcom/android/server/pm/PackageManagerService;->-wrap33(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$InstallArgs;I)V
+    invoke-static {v2, v0, v1}, Lcom/android/server/pm/PackageManagerService;->-wrap34(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$InstallArgs;I)V
 
     .line 1643
     move-object/from16 v0, p0
@@ -2664,7 +2664,7 @@
 
     move-object/from16 v1, v36
 
-    invoke-static {v2, v0, v1, v5, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap23(Lcom/android/server/pm/PackageManagerService;ILandroid/net/Uri;ILandroid/os/UserHandle;)V
+    invoke-static {v2, v0, v1, v5, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap24(Lcom/android/server/pm/PackageManagerService;ILandroid/net/Uri;ILandroid/os/UserHandle;)V
 
     goto :goto_14
 
@@ -2828,7 +2828,7 @@
 
     move-object/from16 v1, v36
 
-    invoke-static {v2, v0, v1, v3, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap23(Lcom/android/server/pm/PackageManagerService;ILandroid/net/Uri;ILandroid/os/UserHandle;)V
+    invoke-static {v2, v0, v1, v3, v5}, Lcom/android/server/pm/PackageManagerService;->-wrap24(Lcom/android/server/pm/PackageManagerService;ILandroid/net/Uri;ILandroid/os/UserHandle;)V
 
     .line 1672
     :try_start_c
@@ -2860,7 +2860,7 @@
 
     move/from16 v1, v48
 
-    invoke-static {v2, v0, v1}, Lcom/android/server/pm/PackageManagerService;->-wrap33(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$InstallArgs;I)V
+    invoke-static {v2, v0, v1}, Lcom/android/server/pm/PackageManagerService;->-wrap34(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$InstallArgs;I)V
 
     .line 1682
     move-object/from16 v0, p0
@@ -2938,7 +2938,7 @@
     iget-object v8, v0, Lcom/android/server/pm/PackageManagerService$IFVerificationParams;->pkg:Landroid/content/pm/PackageParser$Package;
 
     .line 1689
-    invoke-static {v2, v3, v5, v7, v8}, Lcom/android/server/pm/PackageManagerService;->-wrap45(Lcom/android/server/pm/PackageManagerService;IIZLandroid/content/pm/PackageParser$Package;)V
+    invoke-static {v2, v3, v5, v7, v8}, Lcom/android/server/pm/PackageManagerService;->-wrap46(Lcom/android/server/pm/PackageManagerService;IIZLandroid/content/pm/PackageParser$Package;)V
 
     goto/16 :goto_0
 

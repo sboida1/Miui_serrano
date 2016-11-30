@@ -53,7 +53,7 @@
 
     sget-object v1, Landroid/util/ArrayMap;->EMPTY:Landroid/util/ArrayMap;
 
-    iput-object v1, v0, Landroid/os/PersistableBundle;->mMap:Landroid/util/ArrayMap;
+    iput-object v1, v0, Landroid/os/BaseBundle;->mMap:Landroid/util/ArrayMap;
 
     .line 45
     sget-object v0, Landroid/os/BaseBundle;->EMPTY_PARCEL:Landroid/os/Parcel;

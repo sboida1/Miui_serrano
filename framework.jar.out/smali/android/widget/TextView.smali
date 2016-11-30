@@ -25804,16 +25804,7 @@
     .line 8294
     iget-object v7, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
-    iget-object v7, v7, Landroid/widget/Editor;->mSelectionModifierCursorController:Landroid/widget/Editor$SelectionModifierCursorController;
-
-    if-eqz v7, :cond_3
-
-    .line 8295
-    iget-object v7, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
-
-    iget-object v7, v7, Landroid/widget/Editor;->mSelectionModifierCursorController:Landroid/widget/Editor$SelectionModifierCursorController;
-
-    invoke-virtual {v7}, Landroid/widget/Editor$SelectionModifierCursorController;->isDragAcceleratorActive()Z
+	invoke-virtual {v7}, Landroid/widget/Editor;->isInSwipeSelectionMode()Z
 
     move-result v7
 
@@ -29190,7 +29181,7 @@
     move-result-object v1
 
     .line 4920
-    const v2, 0x108044a
+    const v2, 0x108044e
 
     .line 4919
     invoke-virtual {v1, v2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;

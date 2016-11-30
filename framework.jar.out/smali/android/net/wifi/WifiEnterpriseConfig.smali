@@ -1538,7 +1538,7 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 5
+    .locals 6
 
     .prologue
     .line 769
@@ -1548,13 +1548,13 @@
 
     .line 770
     .local v2, "sb":Ljava/lang/StringBuffer;
-    iget-object v3, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mFields:Ljava/util/HashMap;
+    iget-object v4, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mFields:Ljava/util/HashMap;
 
-    invoke-virtual {v3}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+    invoke-virtual {v4}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
@@ -1562,9 +1562,9 @@
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_0
+    if-eqz v4, :cond_1
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1572,44 +1572,64 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 771
+    .line 772
     .local v0, "key":Ljava/lang/String;
+    const-string/jumbo v4, "password"
+
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    const-string/jumbo v3, "<removed>"
+
+    .line 773
+    .local v3, "value":Ljava/lang/String;
+    :goto_1
     invoke-virtual {v2, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v3
-
-    const-string/jumbo v4, " "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     move-result-object v4
 
-    iget-object v3, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mFields:Ljava/util/HashMap;
+    const-string/jumbo v5, " "
 
-    invoke-virtual {v3, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v4
+
+    const-string/jumbo v5, "\n"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    goto :goto_0
+
+    .line 772
+    .end local v3    # "value":Ljava/lang/String;
+    :cond_0
+    iget-object v4, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mFields:Ljava/util/HashMap;
+
+    invoke-virtual {v4, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Ljava/lang/String;
 
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+    .restart local v3    # "value":Ljava/lang/String;
+    goto :goto_1
 
-    move-result-object v3
-
-    const-string/jumbo v4, "\n"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    goto :goto_0
-
-    .line 773
+    .line 775
     .end local v0    # "key":Ljava/lang/String;
-    :cond_0
+    .end local v3    # "value":Ljava/lang/String;
+    :cond_1
     invoke-virtual {v2}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    return-object v3
+    return-object v4
 .end method
 
 .method public writeToParcel(Landroid/os/Parcel;I)V

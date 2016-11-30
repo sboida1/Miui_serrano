@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/ConnectivityService;
 
     .prologue
-    .line 3589
+    .line 3595
     iput-object p1, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,12 +42,12 @@
     .prologue
     const/16 v3, -0x2710
 
-    .line 3592
+    .line 3598
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3593
+    .line 3599
     .local v0, "action":Ljava/lang/String;
     const-string/jumbo v2, "android.intent.extra.user_handle"
 
@@ -55,13 +55,13 @@
 
     move-result v1
 
-    .line 3594
+    .line 3600
     .local v1, "userId":I
     if-ne v1, v3, :cond_0
 
     return-void
 
-    .line 3596
+    .line 3602
     :cond_0
     const-string/jumbo v2, "android.intent.action.USER_STARTING"
 
@@ -71,17 +71,17 @@
 
     if-eqz v2, :cond_2
 
-    .line 3597
+    .line 3603
     iget-object v2, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-static {v2, v1}, Lcom/android/server/ConnectivityService;->-wrap20(Lcom/android/server/ConnectivityService;I)V
 
-    .line 3591
+    .line 3597
     :cond_1
     :goto_0
     return-void
 
-    .line 3598
+    .line 3604
     :cond_2
     const-string/jumbo v2, "android.intent.action.USER_STOPPING"
 
@@ -91,7 +91,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 3599
+    .line 3605
     iget-object v2, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-static {v2, v1}, Lcom/android/server/ConnectivityService;->-wrap21(Lcom/android/server/ConnectivityService;I)V

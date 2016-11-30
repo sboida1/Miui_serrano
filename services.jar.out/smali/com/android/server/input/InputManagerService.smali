@@ -3442,7 +3442,7 @@
     move-result-object v0
 
     .line 920
-    const v1, 0x1080427
+    const v1, 0x108042b
 
     .line 914
     invoke-virtual {v0, v1}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;

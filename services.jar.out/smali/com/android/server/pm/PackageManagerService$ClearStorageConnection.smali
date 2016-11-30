@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/server/pm/PackageManagerService;
 
     .prologue
-    .line 14344
+    .line 14374
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$ClearStorageConnection;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -55,10 +55,10 @@
     .param p2, "service"    # Landroid/os/IBinder;
 
     .prologue
-    .line 14349
+    .line 14379
     monitor-enter p0
 
-    .line 14350
+    .line 14380
     :try_start_0
     invoke-static {p2}, Lcom/android/internal/app/IMediaContainerService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/app/IMediaContainerService;
 
@@ -66,17 +66,17 @@
 
     iput-object v0, p0, Lcom/android/server/pm/PackageManagerService$ClearStorageConnection;->mContainerService:Lcom/android/internal/app/IMediaContainerService;
 
-    .line 14351
+    .line 14381
     invoke-virtual {p0}, Lcom/android/server/pm/PackageManagerService$ClearStorageConnection;->notifyAll()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     monitor-exit p0
 
-    .line 14348
+    .line 14378
     return-void
 
-    .line 14349
+    .line 14379
     :catchall_0
     move-exception v0
 
@@ -90,6 +90,6 @@
     .param p1, "name"    # Landroid/content/ComponentName;
 
     .prologue
-    .line 14356
+    .line 14386
     return-void
 .end method

@@ -6988,8 +6988,15 @@
     :goto_1
     return-void
 
-    .line 1123
+    .line 1121
     :cond_7
+    invoke-virtual {p0}, Lcom/android/server/location/GpsLocationProvider;->isEnabled()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    .line 1123
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider;->mWorkSource:Landroid/os/WorkSource;
 
     invoke-direct {p0, v0}, Lcom/android/server/location/GpsLocationProvider;->updateClientUids(Landroid/os/WorkSource;)V

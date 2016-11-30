@@ -956,6 +956,31 @@
     return v0
 .end method
 
+.method public isKeyguardPanelFocused()Z
+    .locals 1
+
+    .prologue
+    .line 440
+    iget-object v0, p0, Lcom/android/server/policy/keyguard/KeyguardServiceDelegate;->mKeyguardService:Lcom/android/server/policy/keyguard/KeyguardServiceWrapper;
+
+    if-eqz v0, :cond_0
+
+    .line 441
+    iget-object v0, p0, Lcom/android/server/policy/keyguard/KeyguardServiceDelegate;->mKeyguardService:Lcom/android/server/policy/keyguard/KeyguardServiceWrapper;
+
+    invoke-virtual {v0}, Lcom/android/server/policy/keyguard/KeyguardServiceWrapper;->isKeyguardPanelFocused()Z
+
+    move-result v0
+
+    return v0
+
+    .line 443
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method public isSecure()Z
     .locals 2
 

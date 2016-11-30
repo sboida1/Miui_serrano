@@ -5,34 +5,27 @@ private-phone-apps := \
 	Bluetooth \
 	BluetoothExt \
 	CertInstaller \
-	FM2 \
 	KeyChain \
-	LatinIME \
 	LiveWallpapers \
-	NfcNci \
+	LatinIME \
 	PacProcessor \
-	PicoTts \
 	PrintSpooler \
-	Stk \
 	telresources \
-	TimeService \
-	WAPPushManager \
-	webview
+	WAPPushManager
 
 private-phone-priv-apps := \
-	AudioFX \
-	BackupRestoreConfirmation \
-	CellBroadcastReceiver \
-	CMAudioService \
-	CMSettingsProvider \
-	ExternalStorageProvider \
-	FusedLocation \
-	InputDevices \
-	OneTimeInitializer \
-	ProxyHandler \
-	SamsungDoze \
-	Screencast \
-	SharedStorageBackup \
-	Shell \
-	StatementService \
-	Tag 
+		AudioFX \
+		BackupRestoreConfirmation \
+		CarrierConfig \
+		CellBroadcastReceiver \
+		CMSettingsProvider \
+		CMAudioService \
+		ThemeManagerService \
+		ExternalStorageProvider \
+		FusedLocation \
+		InputDevices \
+		ProxyHandler \
+		StatementService \
+		SharedStorageBackup \
+		Shell \
+		ThemesProvider

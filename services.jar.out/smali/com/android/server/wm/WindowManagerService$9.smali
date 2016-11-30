@@ -30,7 +30,7 @@
     .param p2, "val$watcherBinder"    # Landroid/os/IBinder;
 
     .prologue
-    .line 6777
+    .line 6778
     iput-object p1, p0, Lcom/android/server/wm/WindowManagerService$9;->this$0:Lcom/android/server/wm/WindowManagerService;
 
     iput-object p2, p0, Lcom/android/server/wm/WindowManagerService$9;->val$watcherBinder:Landroid/os/IBinder;
@@ -46,14 +46,14 @@
     .locals 6
 
     .prologue
-    .line 6780
+    .line 6781
     iget-object v3, p0, Lcom/android/server/wm/WindowManagerService$9;->this$0:Lcom/android/server/wm/WindowManagerService;
 
     iget-object v4, v3, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
     monitor-enter v4
 
-    .line 6781
+    .line 6782
     const/4 v1, 0x0
 
     .local v1, "i":I
@@ -69,7 +69,7 @@
 
     if-ge v1, v3, :cond_2
 
-    .line 6782
+    .line 6783
     iget-object v5, p0, Lcom/android/server/wm/WindowManagerService$9;->val$watcherBinder:Landroid/os/IBinder;
 
     iget-object v3, p0, Lcom/android/server/wm/WindowManagerService$9;->this$0:Lcom/android/server/wm/WindowManagerService;
@@ -90,7 +90,7 @@
 
     if-ne v5, v3, :cond_1
 
-    .line 6783
+    .line 6784
     iget-object v3, p0, Lcom/android/server/wm/WindowManagerService$9;->this$0:Lcom/android/server/wm/WindowManagerService;
 
     iget-object v3, v3, Lcom/android/server/wm/WindowManagerService;->mRotationWatchers:Ljava/util/ArrayList;
@@ -101,7 +101,7 @@
 
     check-cast v2, Lcom/android/server/wm/WindowManagerService$RotationWatcher;
 
-    .line 6784
+    .line 6785
     .local v2, "removed":Lcom/android/server/wm/WindowManagerService$RotationWatcher;
     iget-object v3, v2, Lcom/android/server/wm/WindowManagerService$RotationWatcher;->watcher:Landroid/view/IRotationWatcher;
 
@@ -109,22 +109,22 @@
 
     move-result-object v0
 
-    .line 6785
+    .line 6786
     .local v0, "binder":Landroid/os/IBinder;
     if-eqz v0, :cond_0
 
-    .line 6786
+    .line 6787
     const/4 v3, 0x0
 
     invoke-interface {v0, p0, v3}, Landroid/os/IBinder;->unlinkToDeath(Landroid/os/IBinder$DeathRecipient;I)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6788
+    .line 6789
     :cond_0
     add-int/lit8 v1, v1, -0x1
 
-    .line 6781
+    .line 6782
     .end local v0    # "binder":Landroid/os/IBinder;
     .end local v2    # "removed":Lcom/android/server/wm/WindowManagerService$RotationWatcher;
     :cond_1
@@ -135,10 +135,10 @@
     :cond_2
     monitor-exit v4
 
-    .line 6779
+    .line 6780
     return-void
 
-    .line 6780
+    .line 6781
     :catchall_0
     move-exception v3
 

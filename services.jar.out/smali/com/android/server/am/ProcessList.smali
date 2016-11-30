@@ -2005,7 +2005,7 @@
     if-eqz v7, :cond_6
 
     .line 289
-    const-string/jumbo v17, "XXXXXX"
+    const-string/jumbo v17, "ActivityManager"
 
     const-string/jumbo v18, "choosing minFree values for 64 Bit"
 
@@ -2114,7 +2114,7 @@
 
     .line 294
     :cond_6
-    const-string/jumbo v17, "XXXXXX"
+    const-string/jumbo v17, "ActivityManager"
 
     const-string/jumbo v18, "choosing minFree values for 32 Bit"
 

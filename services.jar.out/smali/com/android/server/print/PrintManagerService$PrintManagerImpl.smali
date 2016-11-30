@@ -737,7 +737,7 @@
     invoke-direct {v2, v9}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
     .line 756
-    const v3, 0x108041e
+    const v3, 0x1080422
 
     .line 755
     invoke-virtual {v2, v3}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;

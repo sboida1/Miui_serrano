@@ -14,7 +14,7 @@
 # static fields
 .field private static final ACTION_TURN_WIFI_OFF:Ljava/lang/String; = "com.android.server.WifiService.ACTION_TURN_WIFI_OFF"
 
-.field private static final ICON_NETWORKS_AVAILABLE:I = 0x108064e
+.field private static final ICON_NETWORKS_AVAILABLE:I = 0x1080652
 
 .field private static final NUM_SCANS_BEFORE_ACTUALLY_SCANNING:I = 0x3
 
@@ -567,7 +567,7 @@
     move-result-object v5
 
     .line 255
-    const v6, 0x108064e
+    const v6, 0x1080652
 
     .line 253
     invoke-virtual {v5, v6}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
@@ -731,7 +731,7 @@
     .line 277
     const/4 v7, 0x0
 
-    const v8, 0x108064e
+    const v8, 0x1080652
 
     invoke-virtual {v1, v7, v8, v5, v6}, Landroid/app/NotificationManager;->notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V
 
@@ -791,7 +791,7 @@
 
     const/4 v6, 0x0
 
-    const v7, 0x108064e
+    const v7, 0x1080652
 
     invoke-virtual {v1, v6, v7, v5}, Landroid/app/NotificationManager;->cancelAsUser(Ljava/lang/String;ILandroid/os/UserHandle;)V
 

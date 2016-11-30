@@ -182,8 +182,8 @@
             <name>miui</name>
         </nameset>
         <fileset>
-            <file>Roboto-Regular.ttf</file>
-            <file>Roboto-Bold.ttf</file>
+            <file>Miui-Regular.ttf</file>
+            <file>Miui-Bold.ttf</file>
         </fileset>
     </family>
 
@@ -192,7 +192,7 @@
             <name>miui-thin</name>
         </nameset>
         <fileset>
-            <file>Roboto-Thin.ttf</file>
+            <file>Miui-Thin.ttf</file>
         </fileset>
     </family>
 
@@ -201,7 +201,7 @@
             <name>miui-light</name>
         </nameset>
         <fileset>
-            <file>Roboto-Light.ttf</file>
+            <file>Miui-Light.ttf</file>
         </fileset>
     </family>
 
