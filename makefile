@@ -21,7 +21,7 @@ local-modified-jars := org.cyanogenmod.platform
 # All apks from MIUI
 local-miui-removed-apps := FM SogouInput WebViewGoogle
 
-local-miui-modified-apps := TeleService InCallUI
+local-miui-modified-apps := InCallUI
 
 # Config density for co-developers to use the aaps with HDPI or XHDPI resource,
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch

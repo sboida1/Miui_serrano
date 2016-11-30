@@ -33,4 +33,5 @@ private-phone-priv-apps := \
 	SharedStorageBackup \
 	Shell \
 	StatementService \
-	ThemesProvider 
+	TeleService 
+	
