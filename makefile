@@ -2,7 +2,7 @@
 ## Makefile for Galaxy S4 Mini
 #
 
-PORT_PRODUCT := serranoltexx_global
+PORT_PRODUCT := serranolte_global
 
 ## The original zip file, MUST be specified by each product
 local-zip-file     := stockrom.zip
