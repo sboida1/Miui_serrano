@@ -41,7 +41,7 @@ Now you can get your own miui ROM, enjoy it!
 #Thanks to
 
 @Micode Miui Rom
-@DiorgenesS (without him, there wouldnt be more fixes)!
-@Prince.K.Paul (Miui-Porting Moderator -helped with rejects)
-@aabyebaby (for Pointing me in the right direction)
+@DiorgenesS 
+@Prince.K.Paul 
+@aabyebaby 
 @umuturunc for his love for Miui and motivation ;-)
