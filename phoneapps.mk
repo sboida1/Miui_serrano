@@ -8,24 +8,29 @@ private-phone-apps := \
 	KeyChain \
 	LiveWallpapers \
 	LatinIME \
+	NfcNci \
 	PacProcessor \
+	PicoTts \
 	PrintSpooler \
+	Stk \
 	telresources \
-	WAPPushManager
+	TimeService \
+	WAPPushManager \
+	webview 
 
 private-phone-priv-apps := \
-		AudioFX \
-		BackupRestoreConfirmation \
-		CarrierConfig \
-		CellBroadcastReceiver \
-		CMSettingsProvider \
-		CMAudioService \
-		ThemeManagerService \
-		ExternalStorageProvider \
-		FusedLocation \
-		InputDevices \
-		ProxyHandler \
-		StatementService \
-		SharedStorageBackup \
-		Shell \
-		ThemesProvider
+	AudioFX \
+	BackupRestoreConfirmation \
+	CarrierConfig \
+	CellBroadcastReceiver \
+	CMSettingsProvider \
+	CMAudioService \
+	ExternalStorageProvider \
+	FusedLocation \
+	InputDevices \
+	OneTimeInitializer \
+	ProxyHandler \
+	SharedStorageBackup \
+	Shell \
+	StatementService \
+	ThemesProvider 
