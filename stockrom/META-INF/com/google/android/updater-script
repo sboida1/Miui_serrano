@@ -1,6 +1,8 @@
 getprop("ro.product.device") == "serrano3g" || getprop("ro.build.product") == "serrano3g" || getprop("ro.product.device") == "serrano3gxx" || getprop("ro.build.product") == "serrano3gxx" || abort("This package is for \"serrano3g\" devices; this is a \"" + getprop("ro.product.device") + "\".");
+unmount("/data");
+unmount("/system");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p24", "/data", "");
-ui_print("Target: samsung/serranolte/serrano3g:6.0.1/KOT49H/I9195XXUCOI4:user/test-keys");
+ui_print("Target: samsung/serrano3g/serrano3g:6.0.1/MOB30Z/a1c4b8d9a6:user/test-keys");
 show_progress(0.750000, 0);
 mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/system", "");
 package_extract_file("META-INF/com/miui/busybox", "/tmp/busybox");
