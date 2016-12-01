@@ -7,15 +7,13 @@ private-phone-apps := \
 	CertInstaller \
 	KeyChain \
 	LiveWallpapers \
-	LatinIME \
 	PacProcessor \
 	PicoTts \
 	PrintSpooler \
 	Stk \
 	telresources \
 	TimeService \
-	WAPPushManager \
-	webview 
+	WAPPushManager 
 
 private-phone-priv-apps := \
 	AudioFX \
@@ -27,7 +25,6 @@ private-phone-priv-apps := \
 	ExternalStorageProvider \
 	FusedLocation \
 	InputDevices \
-	OneTimeInitializer \
 	ProxyHandler \
 	SharedStorageBackup \
 	Shell \

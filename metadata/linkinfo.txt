@@ -7,7 +7,8 @@ system/app/Gallery2/lib/arm/libjni_eglfence.so|/system/lib/libjni_eglfence.so
 system/app/Gallery2/lib/arm/libjni_filtershow_filters.so|/system/lib/libjni_filtershow_filters.so
 system/app/Gallery2/lib/arm/libjni_jpegstream.so|/system/lib/libjni_jpegstream.so
 system/app/Gallery2/lib/arm/librsjni.so|/system/lib/librsjni.so
-system/app/LatinIME/lib/arm/libjni_latinime.so|/system/lib/libjni_latinime.so
+system/app/LatinImeGoogle/lib/arm/libjni_keyboarddecoder.so|/system/lib/libjni_keyboarddecoder.so
+system/app/LatinImeGoogle/lib/arm/libjni_latinimegoogle.so|/system/lib/libjni_latinimegoogle.so
 system/app/PacProcessor/lib/arm/libjni_pacprocessor.so|/system/lib/libjni_pacprocessor.so
 system/app/PicoTts/lib/arm/libttscompat.so|/system/lib/libttscompat.so
 system/app/PicoTts/lib/arm/libttspico.so|/system/lib/libttspico.so
