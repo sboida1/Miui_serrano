@@ -1,14 +1,14 @@
 #
-## Makefile for Galaxy S4 Mini
+## Makefile for Galaxy S4 Mini (i9192)
 #
 
-PORT_PRODUCT = serranolte_global
+PORT_PRODUCT = serrano3g_global
 
 ## The original zip file, MUST be specified by each product
 local-zip-file     := stockrom.zip
 
 # The output zip file of MIUI rom, the default is porting_miui.zip if not specified
-local-out-zip-file := MIUI8_serranolte.zip
+local-out-zip-file := MIUI8_serrano3g.zip
 
 # The location for local-ota to save target-file
 local-previous-target-dir :=
@@ -19,7 +19,7 @@ local-modified-apps :=
 local-modified-jars := org.cyanogenmod.platform
 
 # All apks from MIUI
-local-miui-removed-apps := FM SogouInput Mipay MiuiVideo GameCenter XiaomiVip MiGameCenterSDKService MiuiSuperMarket WebViewGoogle
+local-miui-removed-apps := AMAPNetworkLocation FM GameCenter MiGameCenterSDKService Mipay MiuiSuperMarket MiuiVideo QuickSearchBox SogouInput SystemAdSolution WebViewGoogle XiaomiVip XMPass
 
 local-miui-modified-apps := InCallUI
 
@@ -59,3 +59,17 @@ local-pre-zip-misc:
 	cp -rf stockrom/system/bin/app_process32 $(ZIP_DIR)/system/bin/app_process32
 	@echo remove unnecessary libs!
 	rm -rf $(ZIP_DIR)/system/lib64
+	rm -rf $(ZIP_DIR)/system/lib/libDecRes_sdk.so
+	rm -rf $(ZIP_DIR)/system/lib/libapssdk.so
+	rm -rf $(ZIP_DIR)/system/lib/libjni_eglfence.so
+	rm -rf $(ZIP_DIR)/system/lib/libjni_filtershow_filters.so
+	rm -rf $(ZIP_DIR)/system/lib/libjni_jpegstream.so
+	rm -rf $(ZIP_DIR)/system/lib/libjni_terminal.so
+	rm -rf $(ZIP_DIR)/system/lib/librsjni.so
+	rm -rf $(ZIP_DIR)/system/lib/libminivenus.so
+	rm -rf $(ZIP_DIR)/system/lib/libmresearch.so
+	rm -rf $(ZIP_DIR)/system/lib/libsecurities_sdk.so
+	rm -rf $(ZIP_DIR)/system/lib/libwebp.so
+	rm -rf $(ZIP_DIR)/system/lib/libweibosdkcore_sogou.so
+	rm -rf $(ZIP_DIR)/system/lib/libxmpass_sdk_patcher.so
+	rm -rf $(ZIP_DIR)/system/lib/xmpass_libweibosdkcore.so

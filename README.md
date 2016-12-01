@@ -1,4 +1,4 @@
-#Project MIUI 8 Patchrom for Galaxy S4 Mini
+#Project MIUI 8 Patchrom for Galaxy S4 Mini (i9192)
 
 # 1.Get Android SDK
 
@@ -26,11 +26,11 @@ Then to sync up:
 
 $ repo sync
 
-$ git clone https://github.com/sboida1/Miui_serrano serrano
+$ git clone -b serrano3g https://github.com/sboida1/Miui_serrano.git serrano3g
 
 # 3.Build
 
-$ . build/envsetup.sh && cd serrano
+$ . build/envsetup.sh && cd serrano3g
 
 $ make fullota
 

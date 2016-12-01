@@ -29,7 +29,7 @@
   <project name="CyanogenMod/android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" revision="3e82d461e6b9105a67fec37f3cdf986f8875783a" upstream="refs/heads/stable/cm-13.0-ZNH5Y"/>
   <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" revision="045b6c90b59069a97f596bdbe38e94b539ad7eed" upstream="refs/heads/stable/cm-13.0-ZNH5Y"/>
   <project name="CyanogenMod/android_device_samsung_serrano-common" path="device/samsung/serrano-common" revision="db540a6494daefe87e176e1402685a5d1295f66f" upstream="refs/heads/stable/cm-13.0-ZNH5Y"/>
-  <project name="CyanogenMod/android_device_samsung_serranoltexx" path="device/samsung/serranoltexx" revision="da5b1f99fa72cf210ab6d1f997fc3fac6aba8b81" upstream="refs/heads/stable/cm-13.0-ZNH5Y"/>
+  <project name="CyanogenMod/android_device_samsung_serrano3gxx" path="device/samsung/serrano3gxx" revision="65f0b6d8e4795e70af1dbaffe24efdf380882120" upstream="refs/heads/stable/cm-13.0-ZNH5Y"/>
   <project name="CyanogenMod/android_external_ahbottomnavigation" path="external/ahbottomnavigation" revision="db5dd3444071add22989f47e6ca2acc0387e8239" upstream="refs/heads/stable/cm-13.0-ZNH5Y"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_external_android-clat" path="external/android-clat" revision="bee83f8d7edb48a1d8b8f2333a1b259854c44b95" upstream="refs/heads/stable/cm-13.0-ZNH5Y"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_external_android-mock" path="external/android-mock" revision="430842c5090ed78aae44ba08dd55ee648c852f56" upstream="refs/heads/stable/cm-13.0-ZNH5Y"/>

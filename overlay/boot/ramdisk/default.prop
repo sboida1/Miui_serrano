@@ -13,10 +13,10 @@ dalvik.vm.dex2oat-Xms=64m
 dalvik.vm.dex2oat-Xmx=512m
 ro.dalvik.vm.native.bridge=0
 debug.atrace.tags.enableflags=0
+persist.sys.usb.config=mtp,adb
 #
 # BOOTIMAGE_BUILD_PROPERTIES
 #
-ro.bootimage.build.date=Sat Aug 20 00:37:26 PDT 2016
-ro.bootimage.build.date.utc=1471678646
-ro.bootimage.build.fingerprint=samsung/cm_serranoltexx/serranoltexx:6.0.1/MOB30Z/17112a64e5:userdebug/test-keys
-persist.sys.usb.config=mtp,adb
+ro.bootimage.build.date=Sat Aug 20 00:29:51 PDT 2016
+ro.bootimage.build.date.utc=1471678191
+ro.bootimage.build.fingerprint=samsung/cm_serrano3gxx/serrano3gxx:6.0.1/MOB30Z/a1c4b8d9a6:userdebug/test-keys

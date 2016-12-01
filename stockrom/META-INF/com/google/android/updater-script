@@ -1,6 +1,6 @@
-getprop("ro.product.device") == "serranolte" || getprop("ro.build.product") == "serranolte" || getprop("ro.product.device") == "serranoltexx" || getprop("ro.build.product") == "serranoltexx" || abort("This package is for \"serranolte\" devices; this is a \"" + getprop("ro.product.device") + "\".");
+getprop("ro.product.device") == "serrano3g" || getprop("ro.build.product") == "serrano3g" || getprop("ro.product.device") == "serrano3gxx" || getprop("ro.build.product") == "serrano3gxx" || abort("This package is for \"serrano3g\" devices; this is a \"" + getprop("ro.product.device") + "\".");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p24", "/data", "");
-ui_print("Target: samsung/serranolte/serranolte:6.0.1/KOT49H/I9195XXUCOI4:user/test-keys");
+ui_print("Target: samsung/serranolte/serrano3g:6.0.1/KOT49H/I9195XXUCOI4:user/test-keys");
 show_progress(0.750000, 0);
 mount("ext4", "EMMC", "/dev/block/mmcblk0p21", "/system", "");
 package_extract_file("META-INF/com/miui/busybox", "/tmp/busybox");
@@ -83,7 +83,6 @@ symlink("/system/lib/libjni_jpegstream.so", "/system/app/Gallery2/lib/arm/libjni
 symlink("/system/lib/libjni_latinime.so", "/system/app/LatinIME/lib/arm/libjni_latinime.so");
 symlink("/system/lib/libjni_pacprocessor.so", "/system/app/PacProcessor/lib/arm/libjni_pacprocessor.so");
 symlink("/system/lib/libjni_terminal.so", "/system/app/Terminal/lib/arm/libjni_terminal.so");
-symlink("/system/lib/libnfc_nci_jni.so", "/system/app/NfcNci/lib/arm/libnfc_nci_jni.so");
 symlink("/system/lib/libprintspooler_jni.so", "/system/app/PrintSpooler/lib/arm/libprintspooler_jni.so");
 symlink("/system/lib/libqcomfm_jni.so", "/system/app/FM2/lib/arm/libqcomfm_jni.so");
 symlink("/system/lib/librsjni.so", "/system/app/Gallery2/lib/arm/librsjni.so");

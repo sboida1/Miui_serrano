@@ -8,7 +8,6 @@ private-phone-apps := \
 	KeyChain \
 	LiveWallpapers \
 	LatinIME \
-	NfcNci \
 	PacProcessor \
 	PicoTts \
 	PrintSpooler \
