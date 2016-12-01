@@ -59,3 +59,4 @@ local-pre-zip-misc:
 	cp -rf stockrom/system/bin/app_process32 $(ZIP_DIR)/system/bin/app_process32
 	@echo remove unnecessary libs!
 	rm -rf $(ZIP_DIR)/system/lib64
+	rm -rf $(ZIP_DIR)/system/lib/libjni_latinime.so
