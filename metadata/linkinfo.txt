@@ -3,10 +3,6 @@ system/media/audio/notifications/MessageIncoming.ogg|../ui/MessageIncoming.ogg
 system/app/Bluetooth/lib/arm/libbluetooth_jni.so|/system/lib/libbluetooth_jni.so
 system/app/BluetoothExt/lib/arm/libbluetooth_jni.so|/system/lib/libbluetooth_jni.so
 system/app/FM2/lib/arm/libqcomfm_jni.so|/system/lib/libqcomfm_jni.so
-system/app/Gallery2/lib/arm/libjni_eglfence.so|/system/lib/libjni_eglfence.so
-system/app/Gallery2/lib/arm/libjni_filtershow_filters.so|/system/lib/libjni_filtershow_filters.so
-system/app/Gallery2/lib/arm/libjni_jpegstream.so|/system/lib/libjni_jpegstream.so
-system/app/Gallery2/lib/arm/librsjni.so|/system/lib/librsjni.so
 system/app/LatinImeGoogle/lib/arm/libjni_keyboarddecoder.so|/system/lib/libjni_keyboarddecoder.so
 system/app/LatinImeGoogle/lib/arm/libjni_latinimegoogle.so|/system/lib/libjni_latinimegoogle.so
 system/app/NfcNci/lib/arm/libnfc_nci_jni.so|/system/lib/libnfc_nci_jni.so
@@ -14,7 +10,6 @@ system/app/PacProcessor/lib/arm/libjni_pacprocessor.so|/system/lib/libjni_pacpro
 system/app/PicoTts/lib/arm/libttscompat.so|/system/lib/libttscompat.so
 system/app/PicoTts/lib/arm/libttspico.so|/system/lib/libttspico.so
 system/app/PrintSpooler/lib/arm/libprintspooler_jni.so|/system/lib/libprintspooler_jni.so
-system/app/Terminal/lib/arm/libjni_terminal.so|/system/lib/libjni_terminal.so
 system/bin/acpi|toybox
 system/bin/app_process|app_process32
 system/bin/arp|toybox

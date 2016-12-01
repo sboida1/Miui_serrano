@@ -1,5 +1,5 @@
 #
-## Makefile for Galaxy S4 Mini
+## Makefile for Galaxy S4 Mini 4G
 #
 
 PORT_PRODUCT = serranolte_global
@@ -19,7 +19,7 @@ local-modified-apps :=
 local-modified-jars := org.cyanogenmod.platform
 
 # All apks from MIUI
-local-miui-removed-apps := FM SogouInput Mipay MiuiVideo GameCenter XiaomiVip MiGameCenterSDKService MiuiSuperMarket WebViewGoogle
+local-miui-removed-apps := AMAPNetworkLocation FM GameCenter MiGameCenterSDKService Mipay MiuiSuperMarket MiuiVideo QuickSearchBox SogouInput SystemAdSolution WebViewGoogle XiaomiVip XMPass
 
 local-miui-modified-apps := InCallUI
 
@@ -60,3 +60,19 @@ local-pre-zip-misc:
 	@echo remove unnecessary libs!
 	rm -rf $(ZIP_DIR)/system/lib64
 	rm -rf $(ZIP_DIR)/system/lib/libjni_latinime.so
+	rm -rf $(ZIP_DIR)/system/lib/libDecRes_sdk.so
+	rm -rf $(ZIP_DIR)/system/lib/libapssdk.so
+	rm -rf $(ZIP_DIR)/system/lib/libjni_eglfence.so
+	rm -rf $(ZIP_DIR)/system/lib/libjni_filtershow_filters.so
+	rm -rf $(ZIP_DIR)/system/lib/libjni_jpegstream.so
+	rm -rf $(ZIP_DIR)/system/lib/libjni_latinime.so
+	rm -rf $(ZIP_DIR)/system/lib/libjni_terminal.so
+	rm -rf $(ZIP_DIR)/system/lib/librsjni.so
+	rm -rf $(ZIP_DIR)/system/lib/libminivenus.so
+	rm -rf $(ZIP_DIR)/system/lib/libmresearch.so
+	rm -rf $(ZIP_DIR)/system/lib/libsecurities_sdk.so
+	rm -rf $(ZIP_DIR)/system/lib/libwebp.so
+	rm -rf $(ZIP_DIR)/system/lib/libweibosdkcore_sogou.so
+	rm -rf $(ZIP_DIR)/system/lib/libxmpass_sdk_patcher.so
+	rm -rf $(ZIP_DIR)/system/lib/xmpass_libweibosdkcore.so
+	
