@@ -37,7 +37,7 @@ ro.wifi.channels=
 ro.board.platform=msm8960
 # ro.build.product is obsolete; use ro.product.device
 # Do not try to parse description, fingerprint, or thumbprint
-ro.build.description=sserrano3gxx-user 6.0.1 MOB30Z a1c4b8d9a6 test-keys
+ro.build.description=serrano3gxx-user 6.0.1 MOB30Z a1c4b8d9a6 test-keys
 ro.build.fingerprint=samsung/serrano3g/serrano3g:6.0.1/MOB30Z/a1c4b8d9a6:user/test-keys
 ro.build.characteristics=default
 ro.cm.device=serrano3gxx
