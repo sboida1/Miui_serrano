@@ -1,3 +1,5 @@
+system/media/audio/notifications/MessageComplete.ogg|../ui/MessageComplete.ogg
+system/media/audio/notifications/MessageIncoming.ogg|../ui/MessageIncoming.ogg
 system/app/Bluetooth/lib/arm/libbluetooth_jni.so|/system/lib/libbluetooth_jni.so
 system/app/BluetoothExt/lib/arm/libbluetooth_jni.so|/system/lib/libbluetooth_jni.so
 system/app/FM2/lib/arm/libqcomfm_jni.so|/system/lib/libqcomfm_jni.so
