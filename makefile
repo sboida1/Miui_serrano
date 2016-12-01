@@ -2,7 +2,7 @@
 ## Makefile for Galaxy S4 Mini
 #
 
-PORT_PRODUCT := serranolte_global
+PORT_PRODUCT = serranolte_global
 
 ## The original zip file, MUST be specified by each product
 local-zip-file     := stockrom.zip
@@ -19,21 +19,21 @@ local-modified-apps :=
 local-modified-jars := org.cyanogenmod.platform
 
 # All apks from MIUI
-local-miui-removed-apps := FM SogouInput Mipay MiuiVideo GameCenter XiaomiVip MiGameCenterSDKService WebViewGoogle
+local-miui-removed-apps := FM SogouInput Mipay MiuiVideo GameCenter XiaomiVip MiGameCenterSDKService MiuiSuperMarket WebViewGoogle
 
-local-miui-modified-apps := TeleService InCallUI
+local-miui-modified-apps := InCallUI
 
 # Config density for co-developers to use the aaps with HDPI or XHDPI resource,
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch
 local-density := XHDPI
 
 # All apps need to be removed from original ZIP file
-#local-remove-apps   :=
+local-remove-apps   :=
 
 include phoneapps.mk
 
 # The certificate for release version
-#local-certificate-dir := security
+local-certificate-dir := security
 
 local-target-bit := 32
 
@@ -57,3 +57,5 @@ local-pre-zip-misc:
 	@echo goodbye! miui prebuilt binaries!
 	rm -rf $(ZIP_DIR)/system/bin/app_process32_vendor
 	cp -rf stockrom/system/bin/app_process32 $(ZIP_DIR)/system/bin/app_process32
+	@echo remove unnecessary libs!
+	rm -rf $(ZIP_DIR)/system/lib64
