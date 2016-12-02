@@ -41,3 +41,7 @@ function mergyXmlPart() {
 if [ $1 = "InCallUI" ];then
     $XMLMERGYTOOL $1/res/values $2/res/values
 fi
+
+if [ $1 = "MiuiSystemUI" ];then
+    $XMLMERGYTOOL $1/res/values $2/res/values
+fi
