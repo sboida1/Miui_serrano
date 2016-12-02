@@ -22,7 +22,7 @@ ro.product.brand=samsung
 ro.product.name=serrano3gxx
 ro.product.board=MSM8960
 ro.build.product=serrano3g
-ro.product.model=GT-I9192
+ro.product.model=GT-I9190
 ro.product.device=serrano3g
 # ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
 # use ro.product.cpu.abilist instead.

@@ -17,7 +17,7 @@
     <!--whether the device supports oldman mode-->
     <bool name="support_oldman_mode">false</bool>
     <!--whether the device is dual sim card-->
-    <bool name="support_dual_sim_card">true</bool>
+    <bool name="support_dual_sim_card">false</bool>
     <!--whether the device has dual systems-->
     <bool name="is_dual_system">false</bool>
     <!--whether the device has dual sd card-->
