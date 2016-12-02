@@ -5,6 +5,7 @@ private-phone-apps := \
 	Bluetooth \
 	BluetoothExt \
 	CertInstaller \
+	FM2 \
 	KeyChain \
 	LiveWallpapers \
 	PacProcessor \
