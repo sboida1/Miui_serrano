@@ -1750,6 +1750,7 @@ system/media/audio/ui/VideoStop.ogg 0 0 644 selabel=u:object_r:system_file:s0 ca
 system/media/audio/ui/WirelessChargingStarted.ogg 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/media/audio/ui/camera_click.ogg 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/media/audio/ui/camera_focus.ogg 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/media/theme/default/com.miui.home 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/AudioFX 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/AudioFX/AudioFX.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
