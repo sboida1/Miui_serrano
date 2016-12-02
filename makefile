@@ -21,7 +21,7 @@ local-modified-jars := org.cyanogenmod.platform
 # All apks from MIUI
 local-miui-removed-apps := AMAPNetworkLocation FM GameCenter MiGameCenterSDKService Mipay MiuiSuperMarket MiuiVideo QuickSearchBox SogouInput SystemAdSolution WebViewGoogle XiaomiVip XMPass
 
-local-miui-modified-apps := InCallUI
+local-miui-modified-apps := InCallUI MiuiSystemUI
 
 # Config density for co-developers to use the aaps with HDPI or XHDPI resource,
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch
@@ -74,3 +74,4 @@ local-pre-zip-misc:
 	rm -rf $(ZIP_DIR)/system/lib/libweibosdkcore_sogou.so
 	rm -rf $(ZIP_DIR)/system/lib/libxmpass_sdk_patcher.so
 	rm -rf $(ZIP_DIR)/system/lib/xmpass_libweibosdkcore.so
+	
