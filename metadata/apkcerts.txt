@@ -95,7 +95,7 @@ name="SystemUI.apk" certificate="build/target/product/security/platform.x509.pem
 name="Tag.apk" certificate="PRESIGNED" private_key=""
 name="Telecom.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="TelephonyProvider.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
-name="TeleService.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
+name="TeleService.apk" certificate="PRESIGNED" private_key=""
 name="telresources.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="Terminal.apk" certificate="PRESIGNED" private_key=""
 name="ThemeChooser.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
