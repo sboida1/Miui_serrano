@@ -1,5 +1,5 @@
 #
-## Makefile for Galaxy S4 Mini (i9192)
+## Makefile for Galaxy S4 Mini (i9190)
 #
 
 PORT_PRODUCT = serrano3g_global
