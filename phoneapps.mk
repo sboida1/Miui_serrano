@@ -30,6 +30,5 @@ private-phone-priv-apps := \
 	ProxyHandler \
 	SharedStorageBackup \
 	Shell \
-	StatementService \
-	TeleService 
+	StatementService 
 	
