@@ -1,4 +1,4 @@
-#Project MIUI 8 Patchrom for Galaxy S4 Mini
+#Project MIUI 8 Patchrom for Galaxy S4 Mini - Model (i9195)
 
 # 1.Get Android SDK
 
